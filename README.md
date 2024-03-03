@@ -22,3 +22,12 @@ Open [http://localhost:3000](http://localhost:3000) on your browser to see the r
 ---
 
 <div align="center"><strong>(Currently Under Development)</strong></div>
+
+---
+
+### Todos
+
+- Add themes (gruvbox by default)
+- Add additional settings
+- Tweak the UI
+- Add UI customization options in settings
