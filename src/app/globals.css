@@ -2,32 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import './styles/fonts.css';
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --fg: 255, 255, 255;
+  --bg: 4, 4, 4;
+  --sbg: 8, 8, 8;
+  --tbg: 12, 12, 12;
+  --br: 40, 40, 40;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--fg));
+  background: rgb(var(--bg));
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Navbar */
+
+nav .nav-container {
+  background: rgb(var(--sbg));
+  border: 1px solid rgb(var(--br));
+}
+
+/* cards */
+
+#card-container .cards {
+  background: rgb(var(--sbg));
+  border: 1px solid rgb(var(--br));
+}
+
+#card-container .cards .card {
+  background: rgb(var(--tbg));
+  border: 1px solid rgb(var(--br));
+  transition: 0.2s ease-in background;
+}
+
+#card-container .cards .card:hover {
+  background: rgb(var(--sbg));
+}
+
+#card-container .category-name {
+  font-family: 'Raleway', sans-serif;
+}
+
+.source-link {
+  background: rgb(var(--tbg));
+  border: 1px solid rgb(var(--br));
 }
