@@ -82,10 +82,6 @@ const data = [
 ]
 
 export default function Home() {
-  /**
-   * TODO:
-   * - 
-   */
   return (
     <section className="w-full max-w-[60%]">
       <div id="card-container">
