@@ -13,14 +13,23 @@
   --br: 40, 40, 40;
 } */
 
-/* gruvbox */
+/* gruvbox dark */
 :root {
-  --fg: 248, 248, 242;
-  --bg: 40, 42, 54;
-  --sbg: 48, 51, 61;
-  --tbg: 68, 71, 80;
-  --br: 68, 71, 80;
+  --fg: 235, 219, 178;
+  --bg: 28, 29, 35;
+  --sbg: 28, 29, 35;
+  --tbg: 35, 37, 44;
+  --br: 50, 50, 50;
 }
+
+/* gruvbox light */
+/* :root {
+  --fg: 28, 29, 35;
+  --bg: 235, 219, 178;
+  --sbg: 225, 208, 168;
+  --tbg: 225, 204, 158;
+  --br: 50, 50, 50;
+} */
 
 body {
   margin: 0;
@@ -60,6 +69,18 @@ nav .nav-container {
 }
 
 .source-link {
+  background: rgb(var(--tbg));
+  border: 1px solid rgb(var(--br));
+}
+
+/* themes */
+
+.theme-list {
+  background: rgb(var(--sbg));
+  border: 1px solid rgb(var(--br));
+}
+
+.theme-list .theme {
   background: rgb(var(--tbg));
   border: 1px solid rgb(var(--br));
 }

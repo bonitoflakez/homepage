@@ -74,7 +74,7 @@ const data = [
       },
       {
         id: 4,
-        title: "moneytype",
+        title: "monkeytype",
         url: "https://monkeytype.com/"
       }
     ]
